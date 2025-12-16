@@ -8,5 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: 'test'
-        run: echo michael
+      - uses: actions/checkout@v3
+      
+      - name: Login to DockerHub
+        run: docker login --username michaelsabry -p dckr_pat_E8pCk32N6n31yyUdDvNO25bKflA
