@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: d1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      label-name: task1
+  template:
+    metadata:
+      name: michaelsabry9
+      labels:
+        label-name: task1
+    spec:
+      containers:
+        - name: c5
+          image: michaelsabry/michaelsabry:latest
+          resources:
+            limits:
+              cpu: "0.5"
+              memory: "128Mi"

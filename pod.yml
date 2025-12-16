@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: michaelsabry9
+  labels:
+    label-name: pract
+spec:
+  containers:
+    - name: c5
+      image: michaelsabry/michaelsabry:latest
+      resources:
+        limits:
+          cpu: "0.5"
+          memory: "128Mi"
