@@ -6,5 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
- 
+    
+    steps:
+      - name: 'test'
+        run: echo michael
